@@ -4,8 +4,7 @@ function add(num1: number, num2: number): number{
 return num1 + num2;
 }
 
-
-add(3, '3');
+// add(3, '3');
 
 
 //Arrow function
@@ -27,5 +26,5 @@ const poorUser  = {
 const arr: number[] = [1, 4, 10];
 
 const newArray: number[] = arr.map((elem: number): number => {
-    elem*elem;
+    return elem*elem;
 })
