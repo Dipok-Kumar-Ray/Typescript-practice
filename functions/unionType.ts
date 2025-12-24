@@ -1,23 +1,23 @@
 //union types
 
-type  FrontendDeveloper = "fakibazDeveloper" | "juniorDeveloper"
-type  FullstackDeveloper = "fakibazDeveloper" | "expertDeveloper"
+// type  FrontendDeveloper = "fakibazDeveloper" | "juniorDeveloper"
+// type  FullstackDeveloper = "fakibazDeveloper" | "expertDeveloper"
 
-const newDeveloper : FrontendDeveloper = "juniorDeveloper"
+// const newDeveloper : FrontendDeveloper = "juniorDeveloper"
 
 
-type User = {
-    name: string;
-    email?: string;
-    gender: "male" | "female"
-    bloodGroup: "O+" | "A+" | "AB+"
-}
+// type User = {
+//     name: string;
+//     email?: string;
+//     gender: "male" | "female"
+//     bloodGroup: "O+" | "A+" | "AB+"
+// }
 
-const user1: User = {
-    name: "persian",
-    gender: "male",
-    bloodGroup: "A+"
-}
+// const user1: User = {
+//     name: "persian",
+//     gender: "male",
+//     bloodGroup: "A+"
+// }
 
 
 
