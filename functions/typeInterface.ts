@@ -25,6 +25,8 @@ const user1: UserWithRole1 = {
 type rullNumber = number
 
 
+
+
 // js ---> object, array --> object function ---> object
 
 
