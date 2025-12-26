@@ -1,7 +1,7 @@
 
 // generic interface
 
-interface Developer<T, X>{
+interface Developer<T, X = null>{
     name: string;
     computer: {
         brand: string;
@@ -21,7 +21,7 @@ type EmailWatch = {
 }
 
 
-const poorDeveloper : Developer<EmailWatch, null> = {
+const poorDeveloper : Developer<EmailWatch> = {
     name: "parsian",
     computer: {
         brand: "HP",
