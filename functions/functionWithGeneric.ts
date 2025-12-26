@@ -1,5 +1,7 @@
-
 // function with generic
+
+{
+  //
 
 const createArray = (param: string): string[] => {
   return [param];
@@ -29,26 +31,40 @@ const resGenericObj = createArrayWithGeneric<User>({
 
 const res10 = createArrayWithTuple<string, number>("Bangladesh", 333);
 
-const res11 = createArrayWithTuple<string, { name: string }>(
-  "Bangladesh",
-  { name: "Asia" }
-);
+const res11 = createArrayWithTuple<string, { name: string }>("Bangladesh", {
+  name: "Asia",
+});
+
+
+
+
+
 
 
 
 
 
 const addCourseToStudent = <T>(student: T) => {
-    const course = "Next Level Web Development";
+  const course = "Next Level Web Development";
 
-    return {
-        ...student,
-        course
-    }
+  return {
+    ...student,
+    course,
+  };
+};
+
+const student1 = addCourseToStudent({
+  name: "Mr. X",
+  email: "x@gmail.com",
+  devType: "NLWD",
+});
+
+const student2 = addCourseToStudent({
+  name: "Mr. Y",
+  email: "y@gmail.com",
+  hashWatch: "Apple Watch",
+});
+
+
+//
 }
-
-
-const student1 = addCourseToStudent({name: "Mr. X", email: "x@gmail.com", devType: "NLWD"});
-
-const student2 = addCourseToStudent({name: "Mr. Y", email: "y@gmail.com", hashWatch: "Apple Watch"});
-
