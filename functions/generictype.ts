@@ -1,4 +1,8 @@
 
+
+{
+
+//
 // generic object type 
 
 type GenericArray<param> =  Array<param>
@@ -76,3 +80,7 @@ type GenericTuple<X, Y> = [X, Y]
 const manush: GenericTuple<string, string> = ["Mr. X", "Mr. Y"]
 
 const UserWithID: GenericTuple<number, {name: string, email: string}> = [1234, {name: "persian", email: "dipok@gmail.com"}]
+
+
+//
+}
